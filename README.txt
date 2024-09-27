@@ -1,4 +1,4 @@
-Compiling requires some variant of glut installed. For debian, try installing the package "freeglut3-dev"
+Compiling requires some variant of glut installed. For debian (and offshoots), try installing the package "freeglut3-dev"
 
 For GCC, use the following command:
 	gcc -std=c89 main.c -lm -lGL -lGLU -lglut -o boxplot
