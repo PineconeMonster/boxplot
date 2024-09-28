@@ -220,9 +220,11 @@ int main(int argc, char**argv){
 			outliers[++ii] = list[i];
 
 	/*Sort and print the list to stdio*/
-	sortList(outlier_count, outliers);
-	for(i=0; i<outlier_count; ++i)
-		printf("outlier no. %i: %i\n", i+1, outliers[i]);
+	if(outlier_count){
+		sortList(outlier_count, outliers);
+		for(i=0; i<outlier_count; ++i)
+			printf("outlier no. %i: %i\n", i+1, outliers[i]);
+	}
 
 	int view_width = abs(max - min);
 
